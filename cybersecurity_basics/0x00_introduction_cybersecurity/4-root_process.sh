@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -u "$1" -o pid,comm,vsz,rss --no-headers | awk '$3 > 0 && $4 > 0'
+ps aux | awk -v user="$1" '$1 == user && $5 > 0 && $6 > 0'
