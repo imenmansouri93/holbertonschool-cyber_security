@@ -1,2 +1,2 @@
 #!/bin/bash
-id=$(lsb_release -i)
+lsb_release -s -i | tr -d '\n'
