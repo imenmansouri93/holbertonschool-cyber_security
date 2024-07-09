@@ -1,0 +1,2 @@
+#!/bin/bash
+dig TXT $1 8.8.8.8
