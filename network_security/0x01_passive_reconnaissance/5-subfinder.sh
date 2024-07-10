@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d $1 > $holbertonschool.com.txt
+subfinder -d $1 > $1.txt
