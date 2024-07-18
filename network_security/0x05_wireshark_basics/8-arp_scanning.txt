@@ -1,1 +1,1 @@
-arp == 00 15 5d d0 d6 63
+arp.dst.hw_mac == 00 15 5d d0 d6 63
