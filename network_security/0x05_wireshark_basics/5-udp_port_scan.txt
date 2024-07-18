@@ -1,1 +1,1 @@
-udp && ip.dst == 10.42.68.80
+udp && ip.dst == 10.42.68.80 &&  icmp.type == 3
