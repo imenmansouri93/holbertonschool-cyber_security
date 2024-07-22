@@ -1,14 +1,2 @@
 SQLite 
-not_me
 Orders
-RandomTable1
-RandomTable2
-RandomTable3
-RandomTable4
-RandomTable5
-RandomTable6
-RandomTable7
-RandomTable8
-RandomTable9
-RandomTable10
-Users
