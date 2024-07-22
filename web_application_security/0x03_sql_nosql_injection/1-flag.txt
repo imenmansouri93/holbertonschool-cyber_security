@@ -1,1 +1,1 @@
-sqlite
+SQLite > 2.0 
