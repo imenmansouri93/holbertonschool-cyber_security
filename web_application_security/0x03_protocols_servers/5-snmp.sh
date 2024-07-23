@@ -1,2 +1,2 @@
 #!/bin/bash
-snmpwalk -v 2c -c public ip
+snmpwalk -v 2c -c public $1 | grep -i 'public'
