@@ -1,2 +1,3 @@
 #!/bin/bash
-snmpwalk -v 2c -c public $1 | grep -i 'public'
+find / -type f \( -name "*snmp*.conf" -o -name "*snmp*.d" -o -name "*snmp*.conf.d" \) -exec grep -i 'public' {} \; 2>/dev/null
+
