@@ -1,2 +1,2 @@
 #!/bin/bash
-getsebool semanage -a
+semanage boolean -a
