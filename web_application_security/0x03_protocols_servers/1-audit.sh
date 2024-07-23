@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -E '^PermitRootLogin|^PasswordAuthentication|^ChallengeResponseAuthentication|^UsePAM|^AllowTcpForwarding|^X11Forwarding' /etc/ssh/sshd_config | grep -vE 'PermitRootLogin no|PasswordAuthentication no|ChallengeResponseAuthentication no|UsePAM yes|AllowTcpForwarding no|X11Forwarding no'
+grep -Ev '^PermitRootLogin|^PasswordAuthentication|^ChallengeResponseAuthentication|^UsePAM|^AllowTcpForwarding|^X11Forwarding' /etc/ssh/sshd_config 
