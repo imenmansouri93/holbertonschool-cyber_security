@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sM -p 80,443,21,22,23 -vv http https ssh $1
+sudo nmap -sM -p http https ssh ftp -vv $1
