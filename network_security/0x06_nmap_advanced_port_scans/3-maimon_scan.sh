@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sM -p 80,443,21,22,23 -vv http $1
+sudo nmap -sM -p 80,443,21,22,23 -vv http https $1
