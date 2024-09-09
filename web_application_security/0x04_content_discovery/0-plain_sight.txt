@@ -1,1 +1,1 @@
-/wp-admin, wp-login.php
+/wp-admin, wp-login.php, wordpress 
