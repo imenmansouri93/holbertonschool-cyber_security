@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -iE 'iptables|nft|firewalld|ufw' auth.log | wc -l
+grep -i 'iptables -A' auth.log | wc -l
