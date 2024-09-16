@@ -1,2 +1,2 @@
 #!/bin/bash
-grep 'useradd' auth.log | awk -F'name=' '{print $2}' | awk '{printf $1}' | uniq | sort | paste -sd, -
+grep 'useradd' auth.log | awk -F'name=' '{print $2}' | awk '{print $1}' | awk '!seen[$0]++' | tr '\n' ',' | sed 's/,$//'
