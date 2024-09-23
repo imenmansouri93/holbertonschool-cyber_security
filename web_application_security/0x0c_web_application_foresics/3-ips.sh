@@ -1,14 +1,6 @@
 #!/bin/bash
 
-logfile="auth.log"
+distinct_attackers=$(grep -E 'Accepted password' $"auth.log" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | sort -u | wc -l)
 
-if [ ! -f "$logfile" ]; then
-    echo "Log file '$logfile' not found!"
-    exit 1
-fi
-
-cat "$logfile" | grep "session opened for user" | awk '{print $1}' | sort | uniq > unique_ips.txt
-
-num_ips=$(cat unique_ips.txt | wc -l)
-
-echo "Number of unique attackers: $num_ips"
+# Afficher le nombre d'attaquants distincts
+echo "Nombre d'attaquants distincts ayant accédé au système : $distinct_attackers"
