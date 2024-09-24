@@ -16,4 +16,5 @@ def count_user_ids(path)
 
 
   user_id_count
+  puts user_id_count
 end
