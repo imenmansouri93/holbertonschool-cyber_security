@@ -60,7 +60,7 @@ OptionParser.new do |parser|
     options[:remove] = index.to_i
   end
 
-  parser.on('-h', '--help', 'Show this message') do
+  parser.on('-h', '--help', 'Show help') do
     puts parser
     exit
   end
