@@ -1,1 +1,1 @@
-/hidden-directory/, wp-login.php, wordpress
+/h1d33n, env.conf, wordpress
